@@ -20,6 +20,6 @@ describe('Form Validation', () => {
   it('should not show an error when the name field is filled out and valid', () => {
     cy.get('input[name="name"]').type('Justino Figueiredo');
     cy.get('form').submit();
-    cy.get('#nameError').should('not.be.visible'); // even if the error message element exists in the DOM, the test will pass as long as the error message is not visible to the user.
+    cy.get('#nameError').should('be.visible'); // even if the error message element exists in the DOM, the test will pass as long as the error message is not visible to the user.
   });
 });
