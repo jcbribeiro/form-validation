@@ -44,3 +44,5 @@ Scenario: Email filled out and valid
     Given the "email" field is filled out with: "JustinoFigueiredo@email.com"
     When the form is submitted
     Then no error message should be shown for the "email" field
+
+TEST
